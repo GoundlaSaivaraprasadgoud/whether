@@ -16,7 +16,7 @@ form.addEventListener('click',searchforlocation);
 // http://api.weatherapi.com/v1/current.json?key=f9fdf6925871479fa11174511260202&q=${Location}&aqi=no
 
 const fetchdata = async(Location) =>{
-    let url = `https://api.weatherapi.com/v1/current.json?key=f9fdf6925871479fa11174511260202&q=London&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=f9fdf6925871479fa11174511260202&q=${Location}&aqi=no`;
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
